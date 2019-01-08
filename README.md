@@ -1,7 +1,10 @@
 # ninjalooter
 Design draft for a comprehensive, multi-platform, post-exploitation framework
 
-# hiGoals and objectives
+  Lister Unlimited Cybersecurity Solutions, LLC.
+  Non-Proprietary Segment of Ninjalooter (AKA Open-Source/Shareware version)
+
+# Goals and objectives
 
 To completely replace common post exploitation frameworks such as Metasploit by making a niche-product, a product that focuses strictly on taking advantage of a privileged shell to loot the system.
 
@@ -61,6 +64,28 @@ What I don't realize is that there does not seem to be all in one solution for p
 
 The hard part is actually the pivoting part, being able to maintain your momentum without being detected.
 
+# Insistence on doing it "Their Way"...
+
+What do I mean when I say, "let's do it their way..."
+
+  1. I mean instead of using Windows 10's implementation of OpenSSH, we should use Powershell Sessions and Server Message Block protocols to exfiltrate files and negotiate connections, bringing up and down virtual networking devices
+
+  2. Instead of using Python, we are going to use Swift and Objective-C to code Mac OSX exploits
+
+  3. Instead of crudely making copycats of the .ipa file structure, we are going to use Mac OSX's packaging tools to properly create the format ourselves, and use py2app to convert Python code into Macho Binaries and .app executables
+
+Doing it THEIR way is the better way.
+
+  a. It conforms to ever-changing compatibility standards
+  b. It is more likely to bypass protection methods
+  c. It is more likely to successfully run
+
+How are we going to do it, "their way"?
+
+Well, I successfully installed a copy of Mac OSX High Sierra on my Ubuntu-KVM laptop, which opens up access to tools such as Xcode. Furthermore, it created a fairly recent and up-to-date platform for penetration testing purposes. I am now learning the Apple-method of zero-configuration networking, which is quite extensive and huge to comprehend.
+
+
+**Let's do it, their way**
 
 # Required languages and frameworks to write this
 
