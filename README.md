@@ -77,6 +77,25 @@ What I don't realize is that there does not seem to be all in one solution for p
 
 The hard part is actually the pivoting part, being able to maintain your momentum without being detected.
 
+# This is NOT a RAT
+
+The author insists that ninjalooter, despite being RAT-like in behavior, is NOT a Remote Access Trojan. Instead, it is a malicious bot solely dedicated towards post-exploitation of a target.
+
+Differences between ninjalooter and a common Remote Access Trojan (Meterpreter, Pupy, Empire, etc.)
+
+1. Remote Access Trojans either grant or maintain access. Ninjalooter does neither, rather ninjalooter simply helps you exfiltrate and loot files.
+
+2. Remote Access Trojans often flaunt multiple techniques to evade detection. While ninjalooter may perform the same techniques, ninjalooter is strictly a malicious bot that is trying to hide it's ransacking of the victim's directories.
+
+3. Remote Access Trojans are (sometimes) spawned from Reverse Shells via a binary/patched upgrade (Meterpreter) or the execution of a new process (whether solely-in-memory, or as a persistence module, or downloaded and executed via a reverse shell). Ninjalooter is a autonomous, post-exploitation bot, that is immediately activated and functions autonomously after being compiled and "dropped through a shell".
+
+4. Remote Access Trojans are used throughout the pentesting kill-chain, but commonly observed at the initial stages being combined with a exploit or spearphishing attack. Usage of ninjalooter is located usually at the very end of the penetration testing process, immediately following privilege escalation, and preceding pivoting. Ninjalooter works best with full root access so it can hurry it getting it's work done and possesses multiple modules that assist in the pivoting process immediately following it's deployment.
+
+5. Remote Access Trojans have many modules that can be selectively activated via a custom command shell. Ninjalooter works best when left alone and handles it's tasks asynchronously. Commands to ninjalooter is pushed into a queue, where it is automatically downloaded upon return from a successful mission. 
+
+6. Remote Access Trojans can be automated to a limited extent via scripting languages. Ninjalooter is entirely autonomous, and functions better if "left alone to do its job". It does not like interaction, and doesn't want to be bothered. However, you can give it additional tasks through the command queue, hopefully if ninjalooter returns successfully in its mission, it'll find itself more tasks to busy itself with.
+
+
 # Insistence on doing it "Their Way"...
 
 What do I mean when I say, "let's do it their way..."
