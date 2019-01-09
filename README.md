@@ -1,10 +1,23 @@
 # ninjalooter
+
 Design draft for a comprehensive, multi-platform, post-exploitation framework
 
   Lister Unlimited Cybersecurity Solutions, LLC.
   Non-Proprietary Segment of Ninjalooter (AKA Open-Source/Shareware version)
 
-# Goals and objectives
+# Notes: Mac OSX Post-Exploitation Modules are a number one priority for this project
+
+To better differentiate this product compared to its competitors, we primarily focus on exploiting Mac boxes.
+
+Exploit kits targeting Windows and Linux are far too oversaturated, but we see a major lack of up-to-date exploits targeting Macs.
+
+As in... (all in one criteria)
+
+	1. Up-to-date. Not some keychain dumping exploit in the first half of 2009. It has to be current.
+	2. Useful. As it, no gimicky or bite-less flaws meant to annoy rather than productively loot and pivot.
+	3. Easy to use. Needs to be as easy as "specifying who is the loot destined for", compiling the bot, and then dropping off that bot in a owned host and sending it on its way.
+
+# Goals and objectives: The Atomic Bomb of Post-Exploitation
 
 To completely replace common post exploitation frameworks such as Metasploit by making a niche-product, a product that focuses strictly on taking advantage of a privileged shell to loot the system.
 
