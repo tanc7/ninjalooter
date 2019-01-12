@@ -104,7 +104,7 @@ What do I mean when I say, "let's do it their way..."
 
   2. Instead of using Python, we are going to use Swift and Objective-C to code Mac OSX exploits
 
-  3. Instead of crudely making copycats of the .ipa file structure, we are going to use Mac OSX's packaging tools to properly create the format ourselves, and use py2app to convert Python code into Macho Binaries and .app executables
+  3. Instead of crudely making copycats of the .ipa file structure, we are going to use Mac OSX's packaging tools to properly create the format ourselves, and use py2app to convert Python code into Macho Single Architecture Microkernel Binaries and .app executables
 
 Doing it THEIR way is the better way.
 
